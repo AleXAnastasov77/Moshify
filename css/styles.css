@@ -28,6 +28,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 h1 {
   font-size: 7rem;
@@ -552,4 +553,15 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* Hero */
+.hero__image {
+  width: 100%;
+}
+.hero__tagline {
+  margin: 2rem 0 5rem;
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
 }
