@@ -556,6 +556,9 @@ a {
 }
 
 /* Hero */
+.hero {
+  clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 90%);
+}
 .hero__image {
   width: 100%;
 }
@@ -564,4 +567,17 @@ a {
   font-size: 2rem;
   color: #b9c3cf;
   letter-spacing: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+  }
+  .hero .grid {
+    align-items: center;
+  }
 }
