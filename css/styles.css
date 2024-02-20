@@ -175,6 +175,7 @@ a {
   white-space: nowrap;
   text-align: center;
   margin: 1rem 0;
+  outline: 0;
 }
 .btn .icon {
   width: 2rem;
@@ -632,5 +633,31 @@ a {
   }
   .hero .grid {
     align-items: center;
+  }
+}
+
+/* Domain Block */
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem 0;
+}
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  justify-items: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(100px));
+  }
+  .block-domain .list__item {
+    font-size: 1.5rem;
+    font-weight: 800;
   }
 }
