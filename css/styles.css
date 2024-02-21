@@ -640,7 +640,8 @@ a {
 .block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
-  margin: 4rem 0;
+  margin: 4rem auto;
+  max-width: 670px;
 }
 .block-domain__prices {
   display: grid;
@@ -650,12 +651,16 @@ a {
   margin-top: 3rem;
   font-size: 2rem;
   font-weight: 600;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .block-domain__prices {
-    grid-template-columns: repeat(auto-fit, minmax(100px));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+@media screen and (min-width: 1024px) {
   .block-domain .list__item {
     font-size: 1.5rem;
     font-weight: 800;
