@@ -14,80 +14,137 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <footer class="block block-footer">
-      <div class="container grid footer__sections">
-        <div class="collapsible">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading">Products</h2>
-            <svg class="icon icon--white collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
-            </svg>
+    <header>
+      <nav class="nav collapsible">
+        <a href="/" class="nav__brand"><img src="images/logo.png" alt="" class="nav__logo" /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list collapsible__content">
+          <li class="list__item"><a href="#">Hosting</a></li>
+          <li class="list__item"><a href="#">VPS</a></li>
+          <li class="list__item"><a href="#">Domain</a></li>
+          <li class="list__item"><a href="#">Pricing</a></li>
+        </ul>
+        </div>
+        </nav>
+    </header>
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <div class="block__header hero__content">
+            <h1 class="block__heading">Cloud Hosting for Pros</h2>
+            <p class="hero__tagline">
+              Deploy your website in less than 60 seconds.
+            </p>
+          <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
+          <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x">
+          <img class="hero__image" src="images/banner.png" alt="">
+        </picture>
+    </div>
+  </section>
+  <section class="block block-domain container">
+    <header class="block__header">
+      <h2 class="block__heading">Starting at $9 per month</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi unde ut
+        eius omnis, tempora expedita temporibus debitis veritatis exercitationem?
+      </p>
+    </header>
+    <div class="input-group">
+      <input
+        class="input"
+        type="text"
+        name=""
+        id=""
+        placeholder="Enter domain here . . ."
+      />
+      <button class="btn btn--accent">
+        <svg class="icon icon--white">
+          <use xlink:href="images/sprite.svg#search"></use>
+        </svg>
+        Search
+      </button>
+    </div>
+    <ul class="list block-domain__prices">
+      <li class="list__item">
+        <span class="badge badge--secondary">.com $9</span>
+      </li>
+      <li class="list__item">.sg $7</li>
+      <li class="list__item">.space $12</li>
+      <li class="list__item">.info $14</li>
+      <li class="list__item">.net $16</li>
+      <li class="list__item">.xyz $10</li>
+    </ul>
+  </section>
+  <section class="block block-plans container">
+    <div class="grid grid--1x3">
+      <div class="plan">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Entry</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--secondary badge--small">10% OFF</span>
+            <span class="plan__description">Easy start on the cloud</span>
           </header>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li class="list__item"><a href="">WordPress Hosting</a></li>
-              <li class="list__item">
-                <a href="">Free Automated WordPress</a>
-              </li>
-              <li class="list__item"><a href="">Migrations</a></li>
-              <li class="list__item"><a href="">Domain Names</a></li>
-              <li class="list__item"><a href="">Monthly Web Hosting</a></li>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited Websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100 GB SSD Storage</li>
+              <li class="list__item">3GB RAM</li>
             </ul>
+            <button class="btn btn--outline btn--block">Buy Now</button>
           </div>
         </div>
-        <div class="collapsible">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading">Company</h2>
-            <svg class="icon icon--white collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
-            </svg>
-          </header>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li class="list__item"><a href="">About</a></li>
-              <li class="list__item"><a href="">Affiliates</a></li>
-              <li class="list__item"><a href="">Blog</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="collapsible">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading">Support</h2>
-            <svg class="icon icon--white collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
-            </svg>
-          </header>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li class="list__item"><a href="">Contact</a></li>
-              <li class="list__item"><a href="">Knowledge Base</a></li>
-              <li class="list__item"><a href="">FAQ</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="collapsible">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading">Domains</h2>
-            <svg class="icon icon--white collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
-            </svg>
-          </header>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li class="list__item"><a href="">Domain Checker</a></li>
-              <li class="list__item"><a href="">Domain Transfer</a></li>
-              <li class="list__item"><a href="">Free Domain</a></li>
-            </ul>
-          </div>
-        </div>
-        <section class="footer__brand">
-          <a href="/"
-            ><img src="images/logo.png" alt="" class="footer__logo"
-          /></a>
-          <p class="footer__copyright">Copyright &copy; 2024 AleX</p>
-        </section>
       </div>
-    </footer>
+  
+      <div class="plan plan--popular">
+        <div class="card card--primary">
+          <header class="card__header">
+            <h3 class="plan__name">Business</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--primary badge--small">20% OFF</span>
+            <span class="plan__description">Optimal Cloud Experience</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited Websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100 GB SSD Storage</li>
+              <li class="list__item">3GB RAM</li>
+            </ul>
+            <button class="btn btn--outline btn--block">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="plan">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Business plus</h3>
+            <span class="plan__price">$54</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--secondary badge--small">10% OFF</span>
+            <span class="plan__description">Easy start on the cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited Websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100 GB SSD Storage</li>
+              <li class="list__item">3GB RAM</li>
+            </ul>
+            <button class="btn btn--outline btn--block">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
     <script src="js/main.js"></script>
   </body>
 </html>
