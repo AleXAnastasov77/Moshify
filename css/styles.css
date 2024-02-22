@@ -678,3 +678,38 @@ a {
   max-width: 500px;
   margin: 0 auto;
 }
+/* Features */
+.feature {
+  margin-bottom: 2rem;
+}
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+.feature.grid {
+  gap: 4rem 2rem;
+}
+.feature .media {
+  flex-direction: column;
+}
+.feature .icon-container {
+  margin-bottom: 1rem;
+}
+.feature .media__text {
+  margin-bottom: 2rem;
+}
+.feature .media__body {
+  margin: 0;
+}
+.feature__image {
+  width: 100%;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .media {
+    order: 2;
+  }
+  .feature {
+    margin-bottom: 10rem;
+  }
+}
