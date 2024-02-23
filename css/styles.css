@@ -42,7 +42,7 @@ h2 {
 }
 h3 {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 p {
   margin-top: 0;
@@ -471,6 +471,9 @@ a {
   padding: 4rem;
   border-radius: 5px;
 }
+.callout-signup {
+  transform: translateY(5rem);
+}
 .callout--primary {
   background-color: var(--color-primary);
   color: white;
@@ -480,12 +483,10 @@ a {
 }
 .callout__heading {
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-top: 0;
 }
-.callout__description {
-  font-size: 2.4rem;
-}
+
 .callout .btn {
   justify-self: center;
   align-self: center;
@@ -494,9 +495,7 @@ a {
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
-  .callout__description {
-    font-size: 2rem;
-  }
+
   .callout .btn {
     justify-self: start;
     margin: 0 2rem;
@@ -748,6 +747,7 @@ a {
 .block-footer {
   background: #232323;
   padding-bottom: 0;
+  padding-top: 10rem;
 }
 .block-footer a {
   color: #777;
@@ -759,9 +759,7 @@ a {
 .block-footer .list {
   margin-top: 1rem;
 }
-.block-footer .list__item {
-  line-height: 2.5;
-}
+
 .block-footer .collapsible {
   border-bottom: 1px solid #393939;
   padding: 2rem;
@@ -785,6 +783,9 @@ a {
 @media screen and (min-width: 768px) {
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .block-footer {
+    font-size: 1.5rem;
   }
   .block-footer .collapsible {
     border-bottom: 0;
